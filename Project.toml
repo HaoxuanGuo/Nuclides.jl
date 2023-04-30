@@ -2,3 +2,6 @@ name = "Nuclides"
 uuid = "cc9befaf-0110-443e-845a-60a17f3568dd"
 authors = ["Haoxuan Guo <kuohaoxuan@outlook.com>"]
 version = "0.1.0"
+
+[deps]
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"

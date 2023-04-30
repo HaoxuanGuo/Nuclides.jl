@@ -15,4 +15,7 @@ export
     # subscript
     super,
     sub,
-    recover
+    recover,
+
+    # parse
+    @nuclide_str
