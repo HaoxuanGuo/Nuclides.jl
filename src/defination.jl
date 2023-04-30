@@ -9,3 +9,5 @@ struct Nuclide
     a::Int
     m::Int
 end
+
+Nuclide(z::Int, a::Int) = Nuclide(z, a, 0)
