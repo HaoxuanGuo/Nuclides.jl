@@ -27,4 +27,10 @@ using Test
     buff = IOBuffer()
     show(buff, C12)
     @test String(take!(buff)) === "nuclide\"¹²C\""
+    @test symbol(Nuclide(6,12,0), format=:inline) === "C-12"
+    @test symbol(Nuclide(6,12,1), format=:inline) === "C-12m"
+    @test symbol(Nuclide(6,12,2), format=:inline) === "C-12m2"
+    @test symbol(Nuclide(6,12,0), format=:plain) === "C012"
+    @test symbol(Nuclide(6,12,1), format=:plain) === "C012m"
+    @test symbol(Nuclide(6,12,2), format=:plain) === "C012m2"
 end

@@ -18,4 +18,7 @@ export
     recover,
 
     # parse
-    @nuclide_str
+    @nuclide_str,
+
+    # show
+    symbol
