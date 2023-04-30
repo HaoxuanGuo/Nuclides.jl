@@ -1,0 +1,4 @@
+name = "Nuclides"
+uuid = "cc9befaf-0110-443e-845a-60a17f3568dd"
+authors = ["Haoxuan Guo <kuohaoxuan@outlook.com>"]
+version = "0.1.0"
