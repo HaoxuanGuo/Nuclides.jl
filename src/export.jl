@@ -6,4 +6,13 @@ export
     atomic_number,
     mass_number,
     metastable_state,
-    neutron_number
+    neutron_number,
+
+    # element symbol
+    element_symbol,
+    zahl,
+
+    # subscript
+    super,
+    sub,
+    recover
