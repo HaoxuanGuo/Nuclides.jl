@@ -19,4 +19,12 @@ using Test
     @test "0123456789" |> super === "⁰¹²³⁴⁵⁶⁷⁸⁹"
     @test "0123456789" |> sub === "₀₁₂₃₄₅₆₇₈₉"
     @test "⁰¹²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉" |> recover === "01234567890123456789"
+
+    # parse
+    @test nuclide"Fe-56" === Nuclide(26, 56)
+
+    # show
+    buff = IOBuffer()
+    show(buff, C12)
+    @test String(take!(buff)) === "nuclide\"¹²C\""
 end
