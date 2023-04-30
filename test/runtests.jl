@@ -9,6 +9,12 @@ using Test
     @test C12 |> metastable_state === 0
     @test C12 |> neutron_number === 6
 
+    # element symbol
+    @test 0 |> element_symbol === "n"
+    @test 6 |> element_symbol === "C"
+    @test 999 |> element_symbol === "X"
+    @test "C" |> zahl === 6
+
     # subscript
     @test "0123456789" |> super === "⁰¹²³⁴⁵⁶⁷⁸⁹"
     @test "0123456789" |> sub === "₀₁₂₃₄₅₆₇₈₉"
