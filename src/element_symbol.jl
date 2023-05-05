@@ -124,7 +124,7 @@ const element_symbols = [
 
 Returns the element symbol for the given atomic number.
 """
-function element_symbol(zahl::Integer)
+element_symbol(zahl::Integer) =
     if zahl == 0
         return "n"
     elseif zahl > 0 && zahl <= length(element_symbols)
@@ -132,7 +132,6 @@ function element_symbol(zahl::Integer)
     else
         return "X"
     end
-end
 
 """
     zahl(symbol::AbstractString)::Int
