@@ -1,3 +1,3 @@
 using Documenter
 
-makedocs(sitename="SpaceSplit.jl")
+makedocs(; sitename = "SpaceSplit.jl")
