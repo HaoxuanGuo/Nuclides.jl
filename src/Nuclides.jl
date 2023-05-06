@@ -1,5 +1,6 @@
 module Nuclides
 
+using MLStyle
 using Printf
 
 include("defination.jl")

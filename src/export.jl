@@ -21,4 +21,6 @@ export
     @nuclide_str,
 
     # show
-    symbol
+    symbol,
+    symbol_full,
+    symbol_inline

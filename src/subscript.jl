@@ -11,6 +11,8 @@ function super(s)
     for c in s
         if c >= '0' && c <= '9'
             res *= super_chars[c - '0' + 1]
+        elseif c === 'm'
+            res *= 'ᵐ'
         end
     end
     return res
