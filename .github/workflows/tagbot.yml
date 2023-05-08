@@ -28,6 +28,9 @@ jobs:
       - uses: JuliaRegistries/TagBot@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          # Edit the following line to reflect the actual name of the GitHub Secret containing your private key
-          ssh: ${{ secrets.DOCUMENTER_KEY }}
-          # ssh: ${{ secrets.NAME_OF_MY_SSH_PRIVATE_KEY_SECRET }}
+          ssh: ${{ secrets.SSH_KEY }}
+          ssh_password: ${{ secrets.SSH_PASSWORD }}
+          user: Haoxuan Guo
+          email: kuohaoxuan@outlook.com
+          gpg: ${{ secrets.GPG_KEY }}
+          gpg_password: ${{ secrets.GPG_PASSWORD }}
