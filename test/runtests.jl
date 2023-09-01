@@ -22,6 +22,7 @@ using Test
 
     # parse
     @test nuclide"Fe-56" === Nuclide(26, 56)
+    @test nuclide"⁵⁶Fe" === Nuclide(26, 56)
 
     # show
     buff = IOBuffer()
